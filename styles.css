@@ -354,4 +354,42 @@ body, html {
     padding: 20px;
     flex-grow: 1;
 }
+/* This hides anything with the "hidden" class */
+.hidden {
+    display: none !important;
+}
 
+/* Ensure each major section takes up the full screen */
+section {
+    min-height: 100vh;
+    width: 100%;
+}
+.progress-container {
+    width: 300px;
+    height: 30px;
+    background: transparent;
+    border: 3px solid #F8EE11; /* charity: water yellow */
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #F8EE11;
+    width: 40%; /* You can change this with JS later */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 120px); /* Adjust size to fit your images */
+    grid-template-rows: repeat(3, 120px);
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Keeps your pipes from looking squished */
+}
