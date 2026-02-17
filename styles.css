@@ -196,3 +196,162 @@ section {
     width: 300px;
   }
 }
+:root {
+    --cw-yellow: #F8EE11;
+    --cw-blue: #00ADEF;
+    --earth-brown: #5D3A24;
+    --dirt-texture: #4B2E1D;
+}
+
+body {
+    margin: 0;
+    background-color: var(--earth-brown);
+    /* Adding a repeating pattern to mimic your "dirt layers" mockup */
+    background-image: linear-gradient(var(--dirt-texture) 2px, transparent 2px);
+    background-size: 100% 40px;
+    font-family: 'Helvetica', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.game-header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-container {
+    width: 60%;
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 30%; /* Initial progress */
+    height: 100%;
+    background-color: var(--cw-yellow);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.tile {
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+/* Footer & Buttons */
+.game-controls {
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-restart {
+    background-color: var(--cw-yellow);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #D4CC0E;
+}
+
+.btn-flow {
+    display: block;
+    margin: 0 auto 15px;
+    background-color: var(--cw-blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+:root {
+    --cw-yellow: #F8EE11;
+    --dirt-dark: #5D3A24;
+    --dirt-light: #7A5035;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Avenir', 'Proxima Nova', sans-serif; /* Matching your README notes */
+}
+
+.hidden { display: none !important; }
+
+/* Start Page Styles */
+#start-page {
+    background: url('img/Flow\ for\ Good.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.game-title {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 2rem;
+}
+
+/* Gameplay Page Styles */
+#game-page {
+    background-color: var(--dirt-dark);
+    /* Creates the horizontal layered dirt look from your mockup */
+    background-image: repeating-linear-gradient(
+        var(--dirt-dark),
+        var(--dirt-dark) 40px,
+        var(--dirt-light) 40px,
+        var(--dirt-light) 45px
+    );
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-main {
+    background-color: var(--cw-yellow);
+    border: none;
+    padding: 15px 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50px;
+    color: #FFF;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+    box-shadow: 0 4px 0px #d4cc0e;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    flex-grow: 1;
+}
+

@@ -45,3 +45,94 @@
     </section>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow For Good | charity: water</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="game-header">
+        <div class="brand">
+            <img src="img/logo.png" alt="charity: water" class="logo">
+            <span>charity: water</span>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <span class="label">PROGRESS BAR</span>
+        </div>
+    </header>
+
+    <main class="game-board">
+        <div id="grid" class="grid-container">
+            <div class="tile pipe-vertical"></div>
+            <div class="tile water-drops"></div>
+            <div class="tile pipe-elbow"></div>
+            <div class="tile water-drops"></div>
+        </div>
+    </main>
+
+    <footer class="game-controls">
+        <button id="flowBtn" class="btn-flow">FLOW WATER</button>
+        <button id="restartBtn" class="btn-restart">
+            <span class="icon">↺</span> RESTART
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow for Good | charity: water</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section id="start-page" class="screen">
+        <div class="start-content">
+            <div class="logo-top">
+                <img src="img/cw_logo.png" alt="charity: water logo">
+                <span>charity: water</span>
+            </div>
+            <h1 class="game-title">Flow for Good</h1>
+            <button id="play-btn" class="btn-main">PLAY</button>
+        </div>
+    </section>
+
+    <section id="game-page" class="screen hidden">
+        <header class="game-header">
+            <img src="img/cw_logo.png" alt="yellow jerry can" class="jerry-can">
+            <div class="progress-wrapper">
+                <div class="progress-bar">
+                    <div id="progress-fill" style="width: 30%;"></div>
+                </div>
+                <span class="progress-text">PROGRESS BAR</span>
+            </div>
+        </header>
+
+        <main class="grid-container">
+            <div class="tile pipe"></div>
+            <div class="tile drops"></div>
+            <div class="tile pipe"></div>
+            <div class="tile drops"></div>
+            <div class="tile water-source"></div>
+            <div class="tile water-tank"></div>
+        </main>
+
+        <footer class="game-footer">
+            <button id="restart-btn" class="btn-main restart">
+                <span class="restart-icon">↺</span> RESTART
+            </button>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
